@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>LR-5</title>
+
+</head>
+<body>
+<div class="flex-wrapper">
+    <header>
+        <img src="../assets/logo.png" alt="logo">
+    </header>
+    <section>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Главная</a></li>
+
+            </ul>
+        </nav>
+        <article>
+            <h1>Выставка мобильной продукции</h1>
+            <div class="container">
+
+                <!-- Форма для заполнения данных -->
+                <form id="companyForm">
+                    <label for="companyName">Название компании:</label>
+                    <input type="text" id="companyName" required><br>
+
+                    <label for="country">Страна:</label>
+                    <input type="text" id="country" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br>
+
+                    <label for="quantity">Количество продукции:</label>
+                    <input type="number" id="quantity" required><br>
+
+                    <button type="button" onclick="addCompany()">Добавить компанию</button>
+                    <button type="button" onclick="clearForm()">Очистить форму</button>
+                    <button type="button" onclick="deleteCompany()">Удалить выбранную компанию</button>
+                    <button type="button" onclick="showAllCompanies()">Показать все компании</button>
+                </form>
+
+                <!-- Таблица для отображения записей -->
+                <table id="companyTable">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Название компании</th>
+                        <th>Страна</th>
+                        <th>Email</th>
+                        <th>Количество продукции</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    <!-- Данные будут добавлены с помощью JavaScript -->
+                    </tbody>
+                </table>
+
+                <!-- Кнопка для вывода стран по количеству продукции -->
+                <button type="button" onclick="showCountriesByQuantity()">Показать страны по количеству продукции</button>
+
+                <!-- Поле для добавления нового свойства -->
+                <label for="newProperty">Добавить новое свойство:</label>
+                <input type="text" id="newProperty">
+                <button type="button" onclick="addNewProperty()">Добавить</button>
+                <p id="newPropertyValue"></p>
+            </div>
+
+</article>
+        <aside>
+            <p class="note">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, fugiat. Beatae reprehenderit, aspernatur aliquam odio praesentium omnis velit consequatur deleniti! Libero voluptate cupiditate numquam facere aliquam unde similique voluptatum! Excepturi!
+            </p>
+        </aside>
+    </section>
+    <footer>
+        <small>674 Gonzales Drive.   Washington, PA 15301</small>
+    </footer>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

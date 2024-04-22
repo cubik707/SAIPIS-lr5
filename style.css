@@ -1,0 +1,189 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: normal;
+    line-height: normal;
+    font-family: Raleway, sans-serif;
+}
+
+button{
+    background-color: unset;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+:root{
+    --focus_color: rgb(48, 101, 239);
+    --error_color: #ff4747;
+}
+
+
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    width: 100%;
+    height: 153px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+}
+
+nav, aside{
+    max-width: 288px;
+    width: 100%;
+    background-color: #ECE8E8;
+}
+
+nav{
+    padding: 175px 90px 200px 70px;
+}
+
+aside{
+    padding: 160px 45px 200px 45px;
+}
+
+
+.note{
+    color: #7B7B7B;
+}
+
+li{
+    font-size: 16px;
+
+    line-height: 50px;
+}
+
+li > a{
+    color: rgb(19, 64, 179);
+}
+
+article{
+    font-size: 14px;
+    padding: 100px 35px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(40, 42, 48);
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form, .paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+input, select, textarea{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px 3px;
+}
+
+textarea{
+    resize: none;
+    height: 73px;
+}
+
+.field{
+    display: flex;
+    gap: 70px
+}
+
+input.radio, input.checkbox{
+    width: auto;
+    display: inline-block;
+}
+
+input::placeholder{
+    color: #b7b7b7;
+}
+
+button{
+    border: none;
+    font-weight: 400;
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+
+    color: #fff;
+    background-color: #4C4C4C;
+    align-self: center;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: var(--focus_color);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/*
+input[type="reset"], input[type="submit"], button{
+    border: none;
+    font-weight: 400;
+    width: 138px;
+    height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4C4C4C;
+}
+
+input[type="reset"]:hover,input[type="submit"]:hover, button:hover{
+    background-color: var(--focus_color);
+    cursor: pointer;
+    transition: 0.2s;
+} */
+
+small{
+    color: white;
+}
