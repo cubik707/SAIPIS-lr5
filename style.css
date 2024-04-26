@@ -101,6 +101,11 @@ h1{
     text-transform: uppercase;
 }
 
+.btn-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -116,7 +121,7 @@ th, td {
     text-align: left;
 }
 
-form, .paragraph{
+form, .paragraph, .newProperty-wrapper{
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -146,6 +151,7 @@ input.radio, input.checkbox{
 input::placeholder{
     color: #b7b7b7;
 }
+
 
 button{
     border: none;

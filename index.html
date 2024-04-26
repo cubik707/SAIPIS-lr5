@@ -32,21 +32,24 @@
                 <!-- Форма для заполнения данных -->
                 <form id="companyForm">
                     <label for="companyName">Название компании:</label>
-                    <input type="text" id="companyName" required><br>
+                    <input type="text" id="companyName" required>
 
                     <label for="country">Страна:</label>
-                    <input type="text" id="country" required><br>
+                    <input type="text" id="country" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" required><br>
+                    <input type="email" id="email" required>
 
                     <label for="quantity">Количество продукции:</label>
-                    <input type="number" id="quantity" required><br>
+                    <input type="number" id="quantity" required>
 
-                    <button type="button" onclick="addCompany()">Добавить компанию</button>
-                    <button type="button" onclick="clearForm()">Очистить форму</button>
-                    <button type="button" onclick="deleteCompany()">Удалить выбранную компанию</button>
-                    <button type="button" onclick="showAllCompanies()">Показать все компании</button>
+                    <div class="btn-wrapper">
+                        <button type="button" onclick="addCompany()">Добавить компанию</button>
+                        <button type="button" onclick="clearForm()">Очистить форму</button>
+                        <button type="button" onclick="deleteCompany()">Удалить выбранную компанию</button>
+                        <button type="button" onclick="displayCompanies()">Показать все компании</button>
+                    </div>
+
                 </form>
 
                 <!-- Таблица для отображения записей -->
@@ -69,10 +72,9 @@
                 <button type="button" onclick="showCountriesByQuantity()">Показать страны по количеству продукции</button>
 
                 <!-- Поле для добавления нового свойства -->
-                <label for="newProperty">Добавить новое свойство:</label>
+                <label for="newProperty">Название нового свойства:</label>
                 <input type="text" id="newProperty">
                 <button type="button" onclick="addNewProperty()">Добавить</button>
-                <p id="newPropertyValue"></p>
             </div>
 
 </article>
